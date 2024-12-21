@@ -1574,7 +1574,7 @@ void uart_communiation_fsm(void) {
  80008c8:	4b33      	ldr	r3, [pc, #204]	@ (8000998 <uart_communiation_fsm+0x110>)
  80008ca:	801a      	strh	r2, [r3, #0]
 			// Convert to string and print
-			sprintf(str, "%d", ADC_value);
+			sprintf(str, "%hu", ADC_value);
  80008cc:	4b32      	ldr	r3, [pc, #200]	@ (8000998 <uart_communiation_fsm+0x110>)
  80008ce:	881b      	ldrh	r3, [r3, #0]
  80008d0:	461a      	mov	r2, r3

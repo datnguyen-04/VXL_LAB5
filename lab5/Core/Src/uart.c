@@ -57,7 +57,7 @@ void uart_communiation_fsm(void) {
 			HAL_ADC_PollForConversion(&hadc1, 100);
 			ADC_value = HAL_ADC_GetValue(&hadc1);
 			// Convert to string and print
-			sprintf(str, "%d", ADC_value);
+			sprintf(str, "%hu", ADC_value);
 		}
 		break;
 	case SEND_DATA:
